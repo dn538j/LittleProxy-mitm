@@ -81,7 +81,7 @@ public final class CertificateHelper {
 
     private static final int ROOT_KEYSIZE = 2048;
 
-    private static final int FAKE_KEYSIZE = 1024;
+    private static final int FAKE_KEYSIZE = 2024;
 
     /** The milliseconds of a day */
     private static final long ONE_DAY = 86400000L;
@@ -99,7 +99,7 @@ public final class CertificateHelper {
      * 
      * Hundred years in the future from starting the proxy should be enough.
      */
-    private static final Date NOT_AFTER = new Date(System.currentTimeMillis() + ONE_DAY * 365 * 100);
+    private static final Date NOT_AFTER = new Date(System.currentTimeMillis() + ONE_DAY * 365 * 1);
 
     /**
      * Enforce TLS 1.2 if available, since it's not default up to Java 8.
